@@ -1,0 +1,46 @@
+<!-- <p>popup works!</p>
+
+<div class="modal-header">
+    <h4 class="modal-title">Hi there!</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Hello, {{name}}!</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+  </div> -->
+
+  <!-- <button class="btn btn-lg btn-outline-primary" >Launch demo modal</button> -->
+  <!-- <button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button> -->
+  
+
+  <!-- <button class="btn btn-danger" (click)="triggerModal(modalData)">Open Modal</button> -->
+
+  <button mat-icon-button (click)="triggerModal(modalData)">
+    <mat-icon>help_outline</mat-icon>
+</button>
+
+<ng-template #modalData let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Angular Bootstrap Modal Popup</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">×</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <!-- <div fxFlex="60"> -->
+     <!-- <app-graph></app-graph> -->
+        <app-widget-card [data]='card1' ></app-widget-card>
+  <!-- </div> -->
+    <p>All data related to west view profile will be removed permanently.</p>
+    
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-danger" (click)="modal.close('Save click')">Close</button>
+  </div>
+
+
+</ng-template>

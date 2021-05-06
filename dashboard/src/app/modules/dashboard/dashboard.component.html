@@ -1,0 +1,224 @@
+
+  <div class="container">
+
+    <!-- Top row L Img R Pressure*3-->
+    <div class="row">
+      <div class="col-8">
+        <img src="assets/img/Rotor.png" class="img-fluid" alt="Responsive image"  >
+      </div>
+      <div class="col-4">
+          <mat-card style='background-color:#319631'>
+            <div class="text">
+                <h4>{{sharedData.Area.heading}}</h4>
+                <span>Total 12 MPa</span>
+                <app-popup [data]='sharedData.Area.data' [heading]='sharedData.Area.heading' [text]='sharedData.Area.text' ></app-popup>
+            </div>
+          </mat-card>
+          <mat-card>
+            <div class="text">
+                <h4>Pressure Two</h4>
+                <span>Total 12 MPa</span>
+                <app-popup [data]='sharedData.Area'></app-popup>
+            </div>
+        </mat-card>
+        <mat-card style='background-color:#b81919'>
+          <div class="text">
+              <h4>Pressure Green</h4>
+              <span>Total 12 MPa</span>
+              <app-popup [data]='sharedData.Area'></app-popup>
+          </div>
+        </mat-card> 
+      </div>
+    </div>
+    <br>
+
+    <!-- Sec Pressure-->
+
+
+    <div class="row">
+      <div class="col">
+        <mat-card>
+          <div class="text">
+              <h4>Emergency stop valves</h4>
+              <span>Total 12 MPa</span>
+              <app-popup [data]='sharedData.Area'></app-popup>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card>
+          <div class="text">
+              <h4>Control Valves</h4>
+              <span>Total 12 MPa</span>
+              <app-popup [data]='sharedData.Area'></app-popup>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card>
+          <div class="text">
+              <h4>First Stage</h4>
+              <span>Total 12 MPa</span>
+              <app-popup [data]='sharedData.Area'></app-popup>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card>
+          <div class="text">
+              <h4>Second Stage</h4>
+              <span>Total 12 MPa</span>
+              <app-popup [data]='sharedData.Area'></app-popup>
+          </div>
+        </mat-card>
+      </div>
+      <div class="col">
+        <mat-card>
+          <div class="text">
+              <h4>Turbine Exhaust</h4>
+              <span>Total 12 MPa</span>
+              <app-popup data=data></app-popup>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <br>
+
+    <!-- 3 row Concentricity   Count out spec-->
+<!-- 
+  </div>
+  <div class="row">
+    <div class="col">
+      <mat-card>
+        <div class="text">
+            <h4>Pressure One</h4>
+            <span>Total 12 MPa</span>
+            <app-popup [data]='sharedData.Area'></app-popup>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card>
+        <div class="text">
+            <h4>Pressure Red</h4>
+            <span>Total 12 MPa</span>
+            <app-popup [data]='sharedData.Area'></app-popup>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card>
+        <div class="text">
+            <h4>Pressure One</h4>
+            <span>Total 12 MPa</span>
+            <app-popup [data]='sharedData.Area'></app-popup>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card>
+        <div class="text">
+            <h4>Pressure One</h4>
+            <span>Total 12 MPa</span>
+            <app-popup [data]='sharedData.Area'></app-popup>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col">
+      <mat-card>
+        <div class="text">
+            <h4>Pressure One</h4>
+            <span>Total 12 MPa</span>
+            <app-popup data=data></app-popup>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  <br> -->
+
+    <!-- 4 row Concentricity   Count out spec-->
+
+
+
+    </div>
+  
+
+    
+    <div class="row">
+      <div class="col-4">
+       <app-extraction-lines></app-extraction-lines>
+      </div>
+
+      <div class="col">
+        <mat-card>
+          <mat-card-title>
+            Count Out Of Specification
+          </mat-card-title>
+          <mat-card-content>
+
+            <app-count-out-of-spec></app-count-out-of-spec>
+          </mat-card-content>
+
+        </mat-card>
+      </div>
+
+      <div class="col">
+        <mat-card>
+            <div class="text">
+              <mat-card-title>
+                {{sharedData.Concentricity.heading}} <app-popup [heading]='sharedData.Concentricity.heading' [text]='sharedData.Concentricity.text'></app-popup>
+              </mat-card-title>
+              <mat-card-content>
+
+              </mat-card-content>
+
+                <span>0.5</span>
+                
+            </div>
+        </mat-card>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-4">
+       <app-water-quality></app-water-quality>
+      </div>
+      <div class="col-4">
+        <app-oil-quality></app-oil-quality>
+       </div>
+       <div class="col-4">
+        <app-bearings></app-bearings>
+       </div>
+    </div>
+    <br>
+
+
+    
+ 
+    
+
+
+
+
+
+<!-- 
+  <mat-card fxLayout="column" fxLayoutGap="30px" style="height:200px;">
+
+    <mat-card class="child-1">
+      <img src="assets/img/Rotor.png">  
+     
+    </mat-card> 
+    <mat-card class="child-2">1. Two</mat-card> 
+  
+  
+  
+  </mat-card>
+
+
+  <img src="assets/img/Rotor.png">
+  <app-info-card label='Pressure' total="1.5"></app-info-card>
+</div>
+
+
+<div>One</div> -->
