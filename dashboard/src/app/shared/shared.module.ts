@@ -19,6 +19,7 @@ import { ExtractionLinesComponent } from './widgets/extraction-lines/extraction-
 import { WaterQualityComponent } from './widgets/water-quality/water-quality.component';
 import { OilQualityComponent } from './widgets/oil-quality/oil-quality.component';
 import { BearingsComponent } from './widgets/bearings/bearings.component';
+import { OverViewComponent } from './widgets/over-view/over-view.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { BearingsComponent } from './widgets/bearings/bearings.component';
     ExtractionLinesComponent,
     WaterQualityComponent,
     OilQualityComponent,
-    BearingsComponent
+    BearingsComponent,
+    OverViewComponent
   ],
   imports: [
     CommonModule,
@@ -69,7 +71,8 @@ import { BearingsComponent } from './widgets/bearings/bearings.component';
     ExtractionLinesComponent,
     WaterQualityComponent,
     OilQualityComponent,
-    BearingsComponent
+    BearingsComponent,
+    OverViewComponent
   ]
 })
 export class SharedModule { }

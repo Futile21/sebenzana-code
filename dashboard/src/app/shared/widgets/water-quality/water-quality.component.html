@@ -1,34 +1,27 @@
 <div class="container">
     <mat-card  >
         <mat-card-title>
-            Water Quality <app-popup></app-popup>
+          <span class="dot" style='background-color:#27f015'></span> Water Quality  <app-popup></app-popup>
             </mat-card-title>
             <mat-card-content>
-                <!-- <Div style='background-color:#b81919'> -->
             <div class="row">
-                <div class="col-8" >
+                <div class="col" >
                     <table style="width:100% " >
                         <tr>
-                          <th>Particulate </th>
+                          <th>Conductivity</th>
                           <th></th>
-                          <th></th>
-
-                          <!-- <th><span class="dot" style='background-color:#27f015'></span></th> -->
+                          <th><span class="dot" style='background-color:#f87800'></span></th>
                         </tr>
                         <tr>
                           <td>0.8</td>
-                          <td>dS/m</td>
-
+                          <td>μS/cm</td>
+                          <td></td>
                         </tr>
-
                       </table>
                 </div>
-                <br>
 
-                <div class="col-2 align-self-start">
-                    <span class="dot" style='background-color:#27f015'></span>
-                </div>
             </div>
+            <br>
 
 
             <Div  class="row">
@@ -36,25 +29,15 @@
 
                       <table style="width:100%">
                         <tr>
-                          <th>Viscosity </th>
+                          <th>Ph </th>
                           <th>OK</th>
                           <th><span class="dot" style='background-color:#f87800'></span></th>
                         </tr>
                         <tr>
-                          <td>Viscosity 1</td>
-                          <td>unit</td>
+                          <td>7</td>
+                          <td></td>
                           <span class="dot" style='background-color:#27f015'></span>
                         </tr>
-                        <tr>
-                          <td>Viscosity 2</td>
-                          <td>unit</td>
-                          <span class="dot" style='background-color:#27f015'></span>
-                        </tr>
-                        <tr>
-                            <td>Viscosity 3</td>
-                            <td>unit</td>
-                            <span class="dot" style='background-color:#f87800'></span>
-                          </tr>
                       </table>
 
                 </div>
@@ -70,7 +53,7 @@
                           <th></th>
                           <th></th>
 
-                          <!-- <th><span class="dot" style='background-color:#27f015'></span></th> -->
+
                         </tr>
                         <tr>
                           <td>12</td>
@@ -92,7 +75,7 @@
                           <th></th>
                           <th></th>
 
-                          <!-- <th><span class="dot" style='background-color:#27f015'></span></th> -->
+    
                         </tr>
                         <tr>
                           <td>23</td>
@@ -109,4 +92,62 @@
             
             </mat-card-content>
     </mat-card>
+</div>
+
+<br>
+
+<div class="container">
+  <mat-card  >
+      <mat-card-title>
+        <span class="dot" style='background-color:#27f015'></span> Water Quality  <app-popup></app-popup>
+          </mat-card-title>
+          <mat-card-content>
+          <div class="row row justify-content-around">
+              <div class="col" >
+                  <table  class="table">
+                      <tr>
+                        <th>Conductivity </th>
+                        <th><span class="dot" style='background-color:#27f015'></span></th>
+                      </tr>
+                      <tr>
+                        <td>0.8</td>
+                        <td>μS/cm</td>
+                      </tr>
+
+                    </table>
+              </div>
+
+
+
+            <div class="col" >
+              <table  class="table">
+                  <tr>
+                    <th>Ph </th>
+                    <th><span class="dot" style='background-color:#27f015'></span></th>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td></td>
+                  </tr>
+
+                </table>
+          </div>
+
+          <div class="col" >
+            <table  class="table">
+                <tr>
+                  <th>Silica content</th>
+                  <th><span class="dot" style='background-color:#27f015'></span></th>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>mg/l</td>
+                </tr>
+
+              </table>
+        </div>
+          </div>
+          <br>
+          </mat-card-content>
+  </mat-card>
 </div>
