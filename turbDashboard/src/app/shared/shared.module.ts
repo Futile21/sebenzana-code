@@ -10,6 +10,8 @@ import { HighchartsChartModule } from 'highcharts-angular';
 import { MatButtonModule, MatIconModule, MatListModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CountOutOfSpecComponent } from './widget/count-out-of-spec/count-out-of-spec.component';
+import { MainComponent } from './widgets/main/main.component';
+import { AssembyComponent } from './widgets/assemby/assemby.component';
 
 
 
@@ -20,7 +22,9 @@ import { CountOutOfSpecComponent } from './widget/count-out-of-spec/count-out-of
     FooterComponent,
     AreaComponent,
     CardComponent,
-    CountOutOfSpecComponent
+    CountOutOfSpecComponent,
+    MainComponent,
+    AssembyComponent
   ],
   imports: [
     CommonModule,
@@ -40,6 +44,8 @@ import { CountOutOfSpecComponent } from './widget/count-out-of-spec/count-out-of
     FooterComponent,
     AreaComponent,
     CountOutOfSpecComponent,
+    MainComponent,
+    AssembyComponent,
   ]
 })
 export class SharedModule { }

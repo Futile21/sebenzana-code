@@ -1,49 +1,31 @@
 
 
-    <!-- <app-bearings></app-bearings><br> -->
-    <!-- <app-water-quality></app-water-quality><br> -->
-    <!-- <app-extraction-lines></app-extraction-lines><br> -->
-    <app-extraction-lines></app-extraction-lines><br>
-    <app-over-view></app-over-view>
+<app-over-view></app-over-view><br>
 
-    <div class="container">
+<!-- <div class="row">
+  <div class="col">  
+    <app-bearings></app-bearings>  
+  </div>
+  <div class="col">  
+    <app-bearings></app-bearings>  
+  </div>
+</div> -->
 
 
-    <!-- Top row L Img R Pressure*3-->
-    <div class="row">
-      <div class="col-8">
-        <img src="assets/img/Rotor.png" class="img-fluid" alt="Responsive image"  >
-      </div>
-      <div class="col-4">
-          <mat-card style='background-color:#319631'>
-            <div class="text">
-                <h4>{{sharedData.Area.heading}}</h4>
-                <span>Total 12 MPa</span>
-                <app-popup [data]='sharedData.Area.data' [heading]='sharedData.Area.heading' [text]='sharedData.Area.text' ></app-popup>
-            </div>
-          </mat-card>
-          <mat-card>
-            <div class="text">
-                <h4>Pressure Two</h4>
-                <span>Total 12 MPa</span>
-                <app-popup [data]='sharedData.Area'></app-popup>
-            </div>
-        </mat-card>
-        <mat-card style='background-color:#b81919'>
-          <div class="text">
-              <h4>Pressure Green</h4>
-              <span>Total 12 MPa</span>
-              <app-popup [data]='sharedData.Area'></app-popup>
-          </div>
-        </mat-card> 
-      </div>
-    </div>
-    <br>
+<app-bearings></app-bearings><br>
+<app-extraction-lines></app-extraction-lines><br>
+
+<app-water-quality></app-water-quality><br>
+<app-oil-quality></app-oil-quality><br>
+<app-assemby></app-assemby><br>
+
+
+
 
     <!-- Sec Pressure-->
 
 
-    <div class="row">
+    <!-- <div class="row">
       <div class="col">
         <mat-card>
           <div class="text">
@@ -89,8 +71,8 @@
           </div>
         </mat-card>
       </div>
-    </div>
-    <br>
+    </div> -->
+
 
     <!-- 3 row Concentricity   Count out spec-->
 <!-- 
@@ -148,11 +130,10 @@
 
 
 
-    </div>
+
   
 
-    
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-4">
        <app-extraction-lines></app-extraction-lines>
       </div>
@@ -207,8 +188,8 @@
       </div>
 
 
-    </div>
-    <br>
+    </div> -->
+  
 
 
     
