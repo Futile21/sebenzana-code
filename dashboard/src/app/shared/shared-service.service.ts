@@ -46,7 +46,8 @@ export const SharedData = {
   Concentricity : {
     heading:'Concentricity',
     text:'This is the measurement of the misalignment between two connected shafts, and directly affects vibration. This will only change when the turbine coupling is split during maintenance. This doesn’t often happen more than once per year. Sometimes turbines are only worked on every 10 years. ',
-  }
+  },
+
 
 }
 
